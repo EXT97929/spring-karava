@@ -1,0 +1,18 @@
+- route:
+    id: route-dbc3
+    nodePrefixId: route-941
+    from:
+      id: from-df6a
+      uri: rest
+      parameters:
+        method: get
+        path: test
+      steps:
+        - bean:
+            id: bean-092d
+            ref: MyBean
+            beanType: org.demo.karavanexample.CamelApplication.MyBean
+- beans:
+    - constructors: {}
+      name: MyBean
+      type: org.demo.karavanexample.MyBean
